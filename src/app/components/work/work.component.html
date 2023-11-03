@@ -1,0 +1,54 @@
+<div id="Work" class="section-padding divder">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="intro-section mb-5 mt-4 text-center">
+          <h1 class="fw-bold">My Work</h1>
+          <h4>
+            (( You may have to wait a little while until the response comes from
+            the API ))
+          </h4>
+          <p class="mx-auto">
+            I have implemented and modified many ideas to have a broad reference
+            of ideas in web technologies. Some applications may be similar to
+            you, but the differences within them are clear and significant.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 box" *ngFor="let item of projects">
+        <a aria-label="work" [href]="item.hostUrl | safeHtml">
+          <div class="p-4 border-hover shadow rounded-5 image">
+            <div class="img-wrapper">
+              <div class="overlay">
+                <p class="text-light px-2">
+                  {{ item.desc }}
+
+                  <br />
+                  <small>Click on The Icon To Open Link</small>
+                </p>
+                <div class="icon">
+                  <a aria-label="icon" [href]="item.gitHub">
+                    <i class="ri-github-fill"></i
+                  ></a>
+                  <a aria-label="icon" [href]="item.hostUrl | safeHtml">
+                    <i class="ri-planet-line"></i>
+                  </a>
+                </div>
+              </div>
+              <img
+                [src]="item.imgUrl"
+                class="img-fluid rounded-5 mb-3"
+                alt="pro-01"
+              />
+            </div>
+
+            <span class="badge bg-info">{{ item.adj }}</span>
+            <h5 class="fw-bold mt-2">{{ item.name }}</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
