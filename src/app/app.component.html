@@ -21,9 +21,15 @@
             >Home</a
           >
         </li>
+
         <li class="nav-item">
           <a aria-label="link" class="nav-link" [routerLink]="['/skills']"
             >Skills</a
+          >
+        </li>
+        <li class="nav-item">
+          <a aria-label="link" class="nav-link" [routerLink]="['/services']"
+            >Services</a
           >
         </li>
         <li class="nav-item">
@@ -39,5 +45,10 @@
     </div>
   </div>
 </nav>
-
-<router-outlet></router-outlet>
+<div
+  [@routeAnimations]="
+    o && o.activatedRouteData && o.activatedRouteData['animation']
+  "
+>
+  <router-outlet #o="outlet"></router-outlet>
+</div>

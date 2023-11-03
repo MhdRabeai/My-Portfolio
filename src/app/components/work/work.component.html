@@ -1,6 +1,6 @@
 <div id="Work" class="section-padding divder">
   <div class="container">
-    <div class="row">
+    <div class="row gy-5 mt-1">
       <div class="col-12">
         <div class="intro-section mb-5 mt-4 text-center">
           <h1 class="fw-bold">My Work</h1>
@@ -17,9 +17,9 @@
       </div>
     </div>
     <div class="row g-4">
-      <div class="col-md-6 col-lg-4 box" *ngFor="let item of projects">
+      <div class="col-md-6 col-lg-4 bo" *ngFor="let item of projects">
         <a aria-label="work" [href]="item.hostUrl | safeHtml">
-          <div class="p-4 border-hover shadow rounded-5 image">
+          <div class="p-4 border-hover shadow rounded-5 box">
             <div class="img-wrapper">
               <div class="overlay">
                 <p class="text-light px-2">
@@ -45,7 +45,7 @@
             </div>
 
             <span class="badge bg-info">{{ item.adj }}</span>
-            <h5 class="fw-bold mt-2">{{ item.name }}</h5>
+            <h6 class="fw-bold mt-2">{{ item.name }}</h6>
           </div>
         </a>
       </div>
