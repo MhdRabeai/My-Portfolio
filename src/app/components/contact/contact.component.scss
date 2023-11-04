@@ -1,15 +1,14 @@
-.section {
-  padding: 110px 0 40px;
-  margin-bottom: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.ftco-section {
+  padding: 85px 0 40px;
 }
-.contact {
-  position: relative;
+
+textarea {
+  resize: none;
 }
-// footer {
-//   position: absolute;
-//   width: 100%;
-//   bottom: -22.4%;
-// }
+mat-form-field {
+  margin-right: 12px;
+}
+button:disabled {
+  background-color: #5b63f46b;
+  color: #fff;
+}

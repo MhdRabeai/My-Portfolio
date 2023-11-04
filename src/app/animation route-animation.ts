@@ -5,7 +5,6 @@ import {
   style,
   animate,
   group,
-  animateChild,
 } from '@angular/animations';
 export const slideInAnimation = trigger('routeAnimations', [
   transition('home => *', [

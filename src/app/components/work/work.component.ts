@@ -16,7 +16,6 @@ export class WorkComponent implements OnInit {
     this.api.getAllProjects().subscribe(
       (res) => {
         this.projects = res.reverse();
-        // console.log(this.projects);
       },
       (err) => {
         console.log(err.message);

@@ -23,8 +23,20 @@
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/style/bootstrap.css", "src/style/styles.scss"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/@builder.io/partytown/lib",
+                "output": "/~partytown"
+              }
+            ],
+            "styles": [
+              "node_modules/devextreme/dist/css/dx.light.css",
+              "src/style/bootstrap.css",
+              "src/style/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -32,8 +44,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",

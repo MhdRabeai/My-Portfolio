@@ -8,10 +8,13 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { WorkComponent } from './components/work/work.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SafeHtmlPipe } from './shared/safe-html.pipe';
 import { ServicesComponent } from './components/services/services.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +31,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
