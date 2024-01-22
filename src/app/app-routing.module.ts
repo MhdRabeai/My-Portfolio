@@ -7,8 +7,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ServicesComponent } from './components/services/services.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/home' },
-  { path: 'home', component: HomeComponent, data: { animation: 'home' } },
+  // { path: '', pathMatch: 'full', redirectTo: '/' },
+  { path: '', component: HomeComponent, data: { animation: 'home' } },
 
   { path: 'skills', component: SkillsComponent, data: { animation: 'skills' } },
   {
